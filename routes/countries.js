@@ -1,12 +1,12 @@
 import { Router } from "express";
-import * as controllers from "./co";// yet to create
+import * as controllers from "../controllers/countries.js";
 
 const router = Router();
 
-router.get("/", controllers.getCharacters);
-router.get("/:id", controllers.getCharacter);
-router.post("/", controllers.createCharacter);
-router.put("/:id", controllers.updateCharacter);
-router.delete("/:id", controllers.deleteCharacter);
+router.get("/", controllers.getCountries);
+router.get("/:id", controllers.getCountry);
+router.post("/", controllers.createCountry);
+router.put("/:id", controllers.updateCountry);
+router.delete("/:id", controllers.deleteCountry);
 
 export default router;
