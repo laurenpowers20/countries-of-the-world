@@ -25,3 +25,14 @@ export const getCountry = async (req, res) => {
     res.status(500).json({ error: error.message });
   }
 };
+
+export const createCountry = async (req, res) => {
+  try {
+    const country = new Country(req.body);
+    await country.save();
+    res.status(201).json(country);
+  } catch (error) {
+    console.error(error);
+    res.status(500).json({ error: error.message });
+  }
+};
