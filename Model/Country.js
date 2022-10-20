@@ -2,21 +2,15 @@ import mongoose from "mongoose";
 const Schema = mongoose.Schema;
 
 let Country = new Schema({
-  name: { type: String },
-  independent: { type: Boolean },
-  currencies: { type: String },
-  capital: { type: String },
-  region:{ type: String },
-  languages: { type: String },
-  landlocked: { type: Boolean },
-  population:{ type: Number},
-  continents: { type: String },
+  name: String,
+  independent: Boolean,
+  currencies: String,
+  capital: String,
+  region: String,
+  languages: Object,
+  landlocked: Boolean,
+  population: Number,
+  continents: [String],
 });
 
 export default mongoose.model("countries", Country);
-
-
-
-
-
-

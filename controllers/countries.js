@@ -36,3 +36,30 @@ export const createCountry = async (req, res) => {
     res.status(500).json({ error: error.message });
   }
 };
+
+export const updateCountry = async (req, res) => {
+  try {
+    const { id } = req.params;
+    const country = await Country.findByIdAndUpdate(id, req.body);
+    res.status(201).json(country);
+  } catch (error) {
+    console.error(error);
+    res.status(500).json({ error: error.message });
+  }
+};
+
+export const deleteCountry = async (req, res) => {
+  try {
+    const { id } = req.params;
+    const deleted = await Country.findByIdAndDelete(id);
+
+    if (deleted) {
+      return res.status(200).send("Country deleted");
+    }
+
+    throw new Error("Country not found");
+  } catch (error) {
+    console.error(error);
+    res.status(500).json({ error: error.message });
+  }
+};
