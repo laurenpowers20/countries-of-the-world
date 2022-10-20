@@ -29,7 +29,9 @@ export const getCountry = async (req, res) => {
 export const getCountryByName = async (req, res) => {
   try {
     const { name } = req.params;
-    const country = await Country.findOne(name);
+    const country = await Country.findOne({
+      name: { $regex: new RegExp("^" + name + "$", "i") },
+    });
     if (country) {
       return res.json(country);
     }

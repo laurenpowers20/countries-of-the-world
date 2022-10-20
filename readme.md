@@ -22,8 +22,24 @@ Languages used are JavaScript and JSON.
 
 Users can search for countries in the following ways:
 
-- Get all countries
+- To get all countries
+
+```js
+/countries
+```
+
 - Search for a country by ID number
+
+```js
+/countries/635155b08cdb373addedf388
+```
+
+- Search for country by name
+
+```js
+/countries/name/mexico
+```
+
 - Create a new country
 - Delete a country
 
