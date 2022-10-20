@@ -18,7 +18,7 @@ Languages used are JavaScript and JSON.
 
 ## Usage
 
-[Postman](https://www.postman.com/) is the recommended platofrm for using this API for CRUD functionality.
+[Postman](https://www.postman.com/) is the recommended platform for using this API for CRUD functionality.
 
 ## References and Contributions
 
