@@ -20,6 +20,13 @@ Languages used are JavaScript and JSON.
 
 [Postman](https://www.postman.com/) is the recommended platform for using this API for CRUD functionality.
 
+Users can search for countries in the following ways:
+
+- Get all countries
+- Search for a country by ID number
+- Create a new country
+- Delete a country
+
 ## References and Contributions
 
 All data has been pulled from [Rest Countries API](https://restcountries.com/).
