@@ -34,10 +34,21 @@ Users can search for countries in the following ways:
 /countries/635155b08cdb373addedf388
 ```
 
+![id](/images/searchbyid.png)
+
 - Search for country by name
 
 ```js
-/countries/name/mexico
+/countries/name/thailand
+```
+
+![id](/images/searchbyname.png)
+
+- For countries that are two or more words, simply use a space or %20
+
+```
+countries/name/costa rica
+countries/name/costa20%rica
 ```
 
 - Create a new country
