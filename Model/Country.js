@@ -2,13 +2,14 @@ import mongoose from "mongoose";
 const Schema = mongoose.Schema;
 
 let Country = new Schema({
-  name: String ,
+  name: String,
   independent: Boolean,
   currencies: String,
   capital: String,
   region: String,
   languages: Object,
   landlocked: Boolean,
+  flags: { png: String },
   population: Number,
   continents: [String],
 });

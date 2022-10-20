@@ -16,6 +16,7 @@ let countryData = countriesData.map((item) => {
   country.languages = item.languages;
   country.landlocked = item.landlocked;
   country.population = item.population;
+  country.flags = item.flags;
   country.continents = item.continents;
   return country;
 });

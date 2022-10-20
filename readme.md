@@ -8,6 +8,7 @@ An API containing select information about the countries of the world. Includes:
 - Region of the world
 - Languages spoken
 - Whether it's landlocked or not
+- Images of the country's flag
 - Population
 - Continent
 
