@@ -5,6 +5,7 @@ const router = Router();
 
 router.get("/", controllers.getCountries);
 router.get("/:id", controllers.getCountry);
+router.get("/:name", controllers.getCountryByName);
 router.post("/", controllers.createCountry);
 router.put("/:id", controllers.updateCountry);
 router.delete("/:id", controllers.deleteCountry);

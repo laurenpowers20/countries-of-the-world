@@ -26,6 +26,20 @@ export const getCountry = async (req, res) => {
   }
 };
 
+export const getCountryByName = async (req, res) => {
+  try {
+    const { name } = req.params;
+    const country = await Country.findOne(name);
+    if (country) {
+      return res.json(country);
+    }
+    res.status(404).json({ message: "Country not found" });
+  } catch (error) {
+    console.error(error);
+    res.status(500).json({ error: error.message });
+  }
+};
+
 export const createCountry = async (req, res) => {
   try {
     const country = new Country(req.body);
