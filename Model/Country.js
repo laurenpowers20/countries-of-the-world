@@ -4,7 +4,7 @@ const Schema = mongoose.Schema;
 let Country = new Schema({
   name: String,
   independent: Boolean,
-  currencies: String,
+  currencies: [String],
   capital: String,
   region: String,
   languages: Object,

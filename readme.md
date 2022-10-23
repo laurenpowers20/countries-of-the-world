@@ -23,7 +23,9 @@ Languages used are JavaScript and JSON.
 
 Users can search for countries in the following ways:
 
-- To get all countries
+- Create a new country
+- Delete a country
+- Get all countries
 
 ```js
 /countries
@@ -51,9 +53,6 @@ Users can search for countries in the following ways:
 countries/name/costa rica
 countries/name/costa20%rica
 ```
-
-- Create a new country
-- Delete a country
 
 ## References and Contributions
 
