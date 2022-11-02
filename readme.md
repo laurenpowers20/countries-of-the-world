@@ -1,5 +1,7 @@
 # Countries of the World API
 
+[Deployed API](https://rampant-sign-production.up.railway.app/)
+
 An API containing select information about the countries of the world. Includes:
 
 - Name of country
