@@ -13,6 +13,8 @@ app.use(cors());
 app.use(logger("dev"));
 
 app.use("/", routes);
+let server = app.listen(process.env.PORT)
+
 
 db.on("connected", () => {
   console.clear();
