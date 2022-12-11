@@ -8,7 +8,6 @@ const connectionString =
   process.env.MONGO_URL || "mongodb://127.0.0.1:27017/countries_db";
 
 mongoose.set("returnOriginal", false);
-mongoose.connect(url, mongooseConfig);
 
 mongoose.connect(connectionString, mongooseConfig).catch((err) => {
   console.log(`Error connection go MongoDB: ${err.message}`);
