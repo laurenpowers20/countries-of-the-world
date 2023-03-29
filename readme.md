@@ -14,14 +14,14 @@ An API containing select information about the countries of the world. Includes:
 - Population
 - Continent
 
-## Technologies Used
+## Skills and Tools Used
 
-This API was built with Mongoose and Express.
-Languages used are JavaScript and JSON.
+- MongoDB, Mongoose, Express.js
+- Routing, Postman, CRUD, controller logic
+- JSON, JavaScript, Node.js
+- Data modeling and Schemas
 
 ## Usage
-
-[Postman](https://www.postman.com/) is the recommended platform for using this API for CRUD functionality.
 
 Users can search for countries in the following ways:
 
